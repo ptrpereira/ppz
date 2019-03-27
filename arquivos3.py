@@ -1,0 +1,7 @@
+arq = open('list.txt', 'r')
+arqSort = open('listSort.txt', 'w')
+arr = arq.readlines()
+arr.sort()
+arqSort.writelines(arr)
+arq.close()
+arqSort.close()
